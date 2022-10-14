@@ -16,7 +16,8 @@ print('~'*text_width)
 
 while True:
     init_txt = ("""
-Below you can find a list of the games for you:
+Below you can find a list of the games for you.
+Enjoy!
 
 1. Guess The Number
 2. Rock, Paper & Scissors

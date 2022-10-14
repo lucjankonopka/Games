@@ -37,7 +37,7 @@ def adding_correct_letters(user_guess, chosen_word):
     while i < len(chosen_word):
         if chosen_word[i] == user_guess:
             display[i] = user_guess
-        i = i + 1
+        i += 1
 
 
 def win_check(chosen_word):
@@ -135,7 +135,7 @@ def hangman_game():
             else:
                 print('Incorrect!')
                 user_guesses.add(user_guess)
-                guesses = guesses - 1
+                guesses -= 1
                 change_hangman_graph()
         game_status(chosen_word)
 

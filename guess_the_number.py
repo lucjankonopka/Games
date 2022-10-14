@@ -28,9 +28,9 @@ def guess_the_number_game():
             break
         elif user_guess > number:
             print(('{} is too high! Try a lower number.').format(user_guess))
-            attempts = attempts - 1
+            attempts -= 1
             continue
         elif user_guess < number:
             print(('{} is too low! Try a higher number.').format(user_guess))
-            attempts = attempts - 1
+            attempts -= 1
             continue

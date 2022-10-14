@@ -23,9 +23,9 @@ def compare_numbers(random_number, user_guess):
     bull = 0
     for i in range(len(random_number)):
         if user_guess[i] == random_number[i]:
-            cow = cow + 1
+            cow += 1
         elif user_guess[i] in random_number:
-            bull = bull + 1
+            bull += 1
 
     if cow <= 1 and bull <= 1:
         print(('{} cow, {} bull').format(cow, bull))
@@ -89,7 +89,7 @@ Have fun!""")
 
         user_guess = input("""Your guess:
 >>> """)
-        counter = counter + 1
+        counter += 1
         if user_guess == 'end' or user_guess == 'exit':
             print('Game left by the user!')
             break
