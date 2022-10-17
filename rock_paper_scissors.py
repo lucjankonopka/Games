@@ -4,6 +4,7 @@ text_width = 50
 user_win_counter = 0
 cpu_win_counter = 0
 
+
 def computer_selection():
     computer_selection_list = ['rock', 'paper', 'scissors']
     computer_random_selection = random.choice(computer_selection_list)
@@ -25,9 +26,9 @@ def user_selection():
 def win_check(user_choice, computer_choice):
     global user_win_counter, cpu_win_counter
     if (user_choice == 'rock' and computer_choice == 'rock' or
-        user_choice == 'paper' and computer_choice == 'paper' or
-        user_choice == 'scissors' and computer_choice == 'scissors'
-        ):
+            user_choice == 'paper' and computer_choice == 'paper' or
+            user_choice == 'scissors' and computer_choice == 'scissors'
+            ):
         print(('It\'s a tie!').center(text_width))
     elif (user_choice == 'rock' and computer_choice == 'scissors' or
           user_choice == 'paper' and computer_choice == 'rock' or
@@ -79,7 +80,6 @@ def rock_paper_scissors_game():
         if game_status() == False:
             print('-'*text_width)
             break
-        
 
 
 rock_paper_scissors_game()
